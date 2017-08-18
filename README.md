@@ -8,6 +8,8 @@ Minimal template of a [React Native](https://facebook.github.io/react-native/) p
 
 ![preview](https://github.com/mrpatiwi/ReactNativeTS/raw/images/preview.png)
 
+![preview2](https://github.com/movibe/ReactNativeTS/raw/master/screenshots/image.png)
+
 > Recommended usage with [VSCode](https://code.visualstudio.com/)
 
 ## Getting Started
