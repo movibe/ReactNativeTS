@@ -1,9 +1,8 @@
 import React from 'react'
 import { StatusBar, StyleSheet, Text, TextStyle, View, ViewStyle } from 'react-native'
-// External Component
 import Button from 'react-native-button'
-// Internal Component
 import ButtonReact from './component/Button/index'
+import BackgroundLinear from './component/BackgroundGradient/index'
 
 interface Props {
 
@@ -15,42 +14,44 @@ interface State {
 
 export default class App extends React.Component<Props, State> {
 
-    constructor(props: Props, state: State) {
+    constructor(props: Props) {
         super(props)
     }
 
     // Comentários somente no TypeScript
-    onPress(): void {
-        alert('Its working fine')
+    onPress(valor: string = 'Its working fine'): void {
+        alert(valor)
     }
 
 
     render(): JSX.Element {
         return (
-            <View style={styles.container}>
-                <StatusBar
-                    backgroundColor="blue"
-                    barStyle="light-content"
-                />
-                <Text style={styles.text}>
-                    Legal
-                </Text>
-                <Text style={styles.instructions}>
-                    React Native com TypeScript
-                </Text>
-                <Button onPress={this.onPress} style={styles.button}>
-                    Clique aqui
-                </Button>
+            <BackgroundLinear>
+                <View style={styles.container}>
+                    <StatusBar
+                        backgroundColor="blue"
+                        barStyle="light-content"
+                    />
+                    <Text style={styles.text}>
+                        React com TypeScript
+                    </Text>
+                    <Text style={styles.instructions}>
+                        Bem legal
+                    </Text>
+                    <Button onPress={() => this.onPress()} style={styles.button}>
+                        Clique aqui
+                    </Button>
 
-                <ButtonReact name="Botão Normal"/>
-                <ButtonReact name="Botão Legal"
-                             onPress={this.onPress}
-                             style={{
-                                 backgroundColor: 'rgba(255,255,255,0.4)',
-                                 borderRadius   : 10,
-                             }}
-                             textStyle={{color: '#fff'}}/>
-            </View>
+                    <ButtonReact name="Botão Normal"/>
+                    <ButtonReact name="Botão Legal"
+                                 onPress={() => this.onPress('Modifica o valor')}
+                                 style={{
+                                     backgroundColor: 'rgba(255,255,255,0.4)',
+                                     borderRadius   : 10,
+                                 }}
+                                 textStyle={{color: '#fff'}}/>
+                </View>
+            </BackgroundLinear>
         )
     }
 }
@@ -60,7 +61,7 @@ const styles = StyleSheet.create({
         flex           : 1,
         justifyContent : 'center',
         alignItems     : 'center',
-        backgroundColor: '#0099cc',
+        backgroundColor: 'transparent',
         flexDirection  : 'column',
     } as ViewStyle,
 
