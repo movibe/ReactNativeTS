@@ -1,0 +1,94 @@
+{
+  "name": "movibe/ReactNativeTS",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "",
+  "style": {
+    "name": "Material",
+    "componentSet": {
+      "nav": "nav/DarkAbsoluteNav",
+      "header": "header/GradientHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "Roboto, sans-serif",
+    "heading": {
+      "fontWeight": 500,
+      "letterSpacing": "-0.01em"
+    },
+    "colors": {
+      "text": "#212121",
+      "background": "#fff",
+      "primary": "#2196f3",
+      "secondary": "#1565c0",
+      "highlight": "#ff4081",
+      "border": "#e0e0e0",
+      "muted": "#f5f5f5"
+    },
+    "layout": {
+      "centered": true,
+      "bannerHeight": "80vh",
+      "maxWidth": 896
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://medium.com/@patriciolpezjuri/react-native-and-typescript-ad57b7413ead",
+          "text": "Home"
+        },
+        {
+          "href": "https://github.com/movibe/ReactNativeTS",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/ReactNativeTS",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "ReactNativeTS",
+      "subhead": "Boilerplate of a React Native project in Typescript.",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "ReactNativeTS: Boilerplate of a React Native project in Typescript.",
+          "url": "https://medium.com/@patriciolpezjuri/react-native-and-typescript-ad57b7413ead"
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "movibe",
+          "repo": "ReactNativeTS"
+        }
+      ],
+      "text": "v1.0.0"
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "\n<p><a href=\"https://travis-ci.org/mrpatiwi/ReactNativeTS\"><img src=\"https://travis-ci.org/mrpatiwi/ReactNativeTS.svg\"></a> <a href=\"https://david-dm.org/mrpatiwi/ReactNativeTS\"><img src=\"https://david-dm.org/mrpatiwi/ReactNativeTS.svg\"></a> <a href=\"https://david-dm.org/mrpatiwi/ReactNativeTS#info=devDependencies\"><img src=\"https://david-dm.org/mrpatiwi/ReactNativeTS/dev-status.svg\"></a></p>\n<p>Minimal template of a <a href=\"https://facebook.github.io/react-native/\">React Native</a> project with <a href=\"https://www.typescriptlang.org/\">Typescript</a>.</p>\n<blockquote>\n<p><strong>This project has been updated but the Medium guide has not</strong>. Please, use this repository as reference.</p>\n</blockquote>\n<p><img src=\"https://github.com/mrpatiwi/ReactNativeTS/raw/images/preview.png\"></p>\n<p><img src=\"https://github.com/movibe/ReactNativeTS/raw/master/screenshots/image.png\"></p>\n<blockquote>\n<p>Recommended usage with <a href=\"https://code.visualstudio.com/\">VSCode</a></p>\n</blockquote>\n<h2>Getting Started</h2>\n<ul>\n<li>Requirements: <a href=\"https://nodejs.org\">Node.js</a> and <a href=\"https://yarnpkg.com/\">Yarn</a></li>\n</ul>\n<p>Clone this repository:</p>\n<pre>git <span class=\"hljs-built_in\">clone</span> https://github.com/mrpatiwi/ReactNativeTS.git\n<span class=\"hljs-built_in\">cd</span> ReactNativeTS</pre><p>Install dependencies:</p>\n<pre>yarn</pre><p>Start React Native server:</p>\n<pre>yarn start</pre><p>Build the source-code with Typescript:</p>\n<pre><span class=\"hljs-comment\"># Build once</span>\nyarn run build\n\n<span class=\"hljs-comment\"># Build and watch for changes</span>\nyarn run build -- --watch</pre><h3>iOS</h3>\n<pre>yarn run ios</pre><h3>Android</h3>\n<pre>yarn run android</pre><h2>Testing</h2>\n<p>This project uses Typescript + Jest. Run the test suite with:</p>\n<pre>yarn <span class=\"hljs-built_in\">test</span></pre>"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/movibe/ReactNativeTS",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/movibe",
+          "text": "movibe"
+        }
+      ]
+    }
+  ]
+}
